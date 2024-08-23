@@ -1,6 +1,11 @@
-const HomePage = () => {
+import BlurIn from "@/components/magicui/blur-in";
+
+function HomePage (){
   return (
-    <div className=''>HomePage uoooo</div>
+    <div className=''>HomePage
+     <BlurIn word={"Hello World"}></BlurIn>
+    </div>
+    
   )
 }
 
