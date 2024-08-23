@@ -1,0 +1,7 @@
+.omo{
+    font-size: x-large;
+    display: flex;
+}
+.omo li{
+    width: 100px;
+}

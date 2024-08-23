@@ -1,12 +1,11 @@
-import BlurIn from "@/components/magicui/blur-in";
+import { RippleDemo } from '@/components/example/rippledemo';
 
-function HomePage (){
+export default function Home() {
   return (
-    <div className=''>HomePage
-     <BlurIn word={"Hello World"}></BlurIn>
-    </div>
-    
-  )
+    <main >
+      <div className='w-full h-full'>
+       <RippleDemo/>
+      </div>
+    </main>
+  );
 }
-
-export default HomePage
