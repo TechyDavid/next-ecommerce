@@ -1,6 +1,6 @@
-const SinglePage = () => {
+const LoginPage = () => {
     return (
         <div className="">Page</div>
     )
 }
-export default SinglePage
+export default LoginPage
