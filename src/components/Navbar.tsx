@@ -1,6 +1,6 @@
 const Navbar = () => {
     return (
-        <div className="">Page</div>
+        <div className="">Navbar</div>
     )
 }
 export default Navbar
