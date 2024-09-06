@@ -4,8 +4,8 @@ import Menu from "./Menu"
 const Navbar = () => {
     return (
         <div className="h-20 px-4 md:px-8 lg:px-16 xl:32 2xl:64">
-            <div className="h-full flex items-center justify-between">
                 {/* {Mobile} */}
+                <div className="h-full flex items-center justify-between">
                 <Link href="/rufus">
                 <div className="text-2xl tracking-wide">
                 Rufus
