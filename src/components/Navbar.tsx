@@ -13,6 +13,13 @@ const Navbar = () => {
                 </Link>
                 <Menu/>
             </div>
+            {/* {BIGGER SCREENS} */}
+            <div className="hidden md:flex items-center justify-between h-full">
+                {/* {LEFT} */}
+                <div className=""></div>
+                 {/* {RIGHT} */}
+                 <div className=""></div>
+            </div>
         </div>
     )
 }
