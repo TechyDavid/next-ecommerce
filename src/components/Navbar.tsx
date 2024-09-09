@@ -16,9 +16,11 @@ const Navbar = () => {
             {/* {BIGGER SCREENS} */}
             <div className="hidden md:flex items-center justify-between h-full">
                 {/* {LEFT} */}
-                <div className=""></div>
+                <div className="w-1/3">
+                    <Link href="/"></Link>
+                </div>
                  {/* {RIGHT} */}
-                 <div className=""></div>
+                 <div className="w-2/3"></div>
             </div>
         </div>
     )
