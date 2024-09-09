@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Menu from "./Menu"
+import Image from "next/image"
 
 const Navbar = () => {
     return (
@@ -15,7 +16,10 @@ const Navbar = () => {
             <div className="hidden md:flex items-center justify-between h-full">
                 {/* {LEFT} */}
                 <div className="w-1/3">
-                    <Link href="/"></Link>
+                    <Link href="/">
+                        <img src="/logo.png" alt="" width={24} height={24} />
+                    <div className="text-2xl tracking-wide">Rufus</div>
+                    </Link>
                 </div>
                  {/* {RIGHT} */}
                  <div className="w-2/3"></div>
