@@ -7,9 +7,7 @@ const Navbar = () => {
                 {/* {Mobile} */}
                 <div className="h-full flex items-center justify-between">
                 <Link href="/rufus">
-                <div className="text-2xl tracking-wide">
-                Rufus
-                </div>
+                <div className="text-2xl tracking-wide">Rufus</div>
                 </Link>
                 <Menu/>
             </div>
