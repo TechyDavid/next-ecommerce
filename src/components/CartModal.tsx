@@ -10,6 +10,8 @@ const CartModal = () => {
               {!cartItems ? (
             <div className="">Cart is empty</div>
         ) : (
+            <div className="flex flex-col gap-8">
+                {/* {ITEM} */}
             <div className="flex gap-4">
                 <img 
                     src="https://images.pexels.com/photos/25460604/pexels-photo-25460604/free-photo-of-man-reading-book.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" 
@@ -22,21 +24,22 @@ const CartModal = () => {
                     {/* {TOP} */}
                     <div className="">
                     {/* {TITLE} */}
-                        <div className="">
-                            <h3>Product Name</h3>
-                            <div className="">$49</div>
+                        <div className="flex items-center justify-between gap-8">
+                            <h3 className="font-semibold">Product Name</h3>
+                            <div className="p-1 bg-gray-50 rounded-sm">$49</div>
                         </div>
                     {/* {DECS} */}
-                    <div className="">
+                    <div className="text-sm text-gray-500">
                         available
                     </div>
                     </div>
                     {/* {BOTTOM} */}
-                    <div className="">
-                        <span>Qty. 2</span>
-                        <span>Remove</span>
+                    <div className="flex justify-between text-sm">
+                        <span className="text-gray-500">Qty. 2</span>
+                        <span className="text-blue-500">Remove</span>
                     </div>
                 </div>
+            </div>
             </div>
         )}
 
