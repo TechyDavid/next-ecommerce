@@ -32,8 +32,8 @@ const slides = [
 const Slider = () => {
   const [current, setCurrent] = useState(0);
   return (
-    <div className="">
-      Slider
+    <div className="h-[]calc(100vh-80px) overflow-hidden">
+      <div className="w-max h-full"></div>
     </div>
   );
 };
