@@ -39,13 +39,13 @@ const Slider = () => {
         {slides.map(slide=>(
           <div className={'${slide.bg} w-screen h-full flex flex-col gap-16 xl:flex-row'} key={slide.id}>
             {/* TEXT CONTAINER */}
-            <div className="">
+            <div className="h-1/2 xl:w-1/2">
               <h2>{slide.description}</h2>
               <h1>{slide.title}</h1>
               <Link href={slide.url}><button>SHOP NOW</button></Link>
             </div>
             {/* IMAGE CONTAINER */}
-            <div className="w-1/2 relative">
+            <div className="h-1/2 xl:w-1/2 relative">
               <Image src={slide.img} alt="" fill sizes="100%" className="object-cover"/>
             </div>
           </div>
