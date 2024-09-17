@@ -37,7 +37,7 @@ const Slider = () => {
     <div className="h-[]calc(100vh-80px) overflow-hidden">
       <div className="w-max h-full flex transition-all ease-in-out duration-1000">
         {slides.map(slide=>(
-          <div className={'${slide.bg} w-screen h-full'} key={slide.id}>
+          <div className={'${slide.bg} w-screen h-full flex flex-col gap-16 xl:flex-row'} key={slide.id}>
             {/* TEXT CONTAINER */}
             <div className="">
               <h2>{slide.description}</h2>
