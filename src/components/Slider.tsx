@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const slides = [
   {
@@ -38,10 +39,14 @@ const Slider = () => {
           <div className="" key={slide.id}>
             {/* TEXT CONTAINER */}
             <div className="">
-              
+              <h2>{slide.description}</h2>
+              <h1>{slide.title}</h1>
+              <Link href={slide.url}><button>SHOP NOW</button></Link>
             </div>
             {/* IMAGE CONTAINER */}
-            <div className=""></div>
+            <div className="">
+              
+            </div>
           </div>
         ))}
       </div>
