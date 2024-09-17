@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const slides = [
   {
@@ -36,7 +37,7 @@ const Slider = () => {
     <div className="h-[]calc(100vh-80px) overflow-hidden">
       <div className="w-max h-full flex transition-all ease-in-out duration-1000">
         {slides.map(slide=>(
-          <div className="" key={slide.id}>
+          <div className={'${slide.bg} w-screen h-full'} key={slide.id}>
             {/* TEXT CONTAINER */}
             <div className="">
               <h2>{slide.description}</h2>
@@ -44,8 +45,8 @@ const Slider = () => {
               <Link href={slide.url}><button>SHOP NOW</button></Link>
             </div>
             {/* IMAGE CONTAINER */}
-            <div className="">
-              
+            <div className="w-1/2 relative">
+              <Image src={slide.img} alt="" fill sizes="100%" className="object-cover"/>
             </div>
           </div>
         ))}
