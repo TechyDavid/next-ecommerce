@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -33,6 +33,11 @@ const slides = [
 
 const Slider = () => {
   const [current, setCurrent] = useState(0);
+
+  useEffect{()=>{
+    const interval
+  },[]}
+
   return (
     <div className="h-[calc(100vh-80px)] overflow-hidden">
       <div className="w-max h-full flex transition-all ease-in-out duration-1000"
