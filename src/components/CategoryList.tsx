@@ -12,6 +12,7 @@ const CategoryList = () => {
                 <h1 className="mt-8 font-light text-clip tracking-wide">Category Name</h1>
                 </Link>
             </div>
+            
         </div>
     )
 }
