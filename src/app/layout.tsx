@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-// import Chatbot from "@/components/Chatbot";
+import Chatbot from "@/components/Chatbot";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,16 +22,16 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar/>
         {children}
-{/*         <Chatbot/> */}
+        <Chatbot/>
         <Footer/>
       </body>
-      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+{/*       <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <df-messenger
   intent="WELCOME"
   chat-title="Faqbot"
   agent-id="286cffad-d80e-4ab1-bfe9-3d80638f716f"
   language-code="en"
-></df-messenger>
+></df-messenger> */}
     </html>
   );
 }
