@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lama Dev E-Commerce Application",
+  title: "Davigner Dev E-Commerce",
   description: "A complete e-commerce application with Next.js and Wix",
 };
 
@@ -21,6 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar/>
         {children}
+        <iframe height="430" width="350" src="https://bot.dialogflow.com/286cffad-d80e-4ab1-bfe9-3d80638f716f"></iframe>
         <Footer/>
       </body>
     </html>
