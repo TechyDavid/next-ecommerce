@@ -7,7 +7,8 @@ const Chatbot = () => {
           chat-title="Faqbot"
           agent-id="286cffad-d80e-4ab1-bfe9-3d80638f716f"
           language-code="en"
-    ></df-messenger>
+    >
+        </df-messenger>
         </div>
     )
 }
