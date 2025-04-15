@@ -1,7 +1,13 @@
 const Chatbot = () => {
     return (
         <div className="">
-          <iframe height="430" width="350" src="https://bot.dialogflow.com/286cffad-d80e-4ab1-bfe9-3d80638f716f"></iframe>
+         <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+          intent="WELCOME"
+          chat-title="Faqbot"
+          agent-id="286cffad-d80e-4ab1-bfe9-3d80638f716f"
+          language-code="en"
+    ></df-messenger>
         </div>
     )
 }
